@@ -1,127 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <title>Bootstrap 5 Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Tim Vyhnálek – Osobní web</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
 
-
-
-
-
-
-    <header class="p-3 text-bg-dark"> <div class="container"> <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"> <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg> </a> <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"> <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li> <li><a href="#" class="nav-link px-2 text-white">Features</a></li> <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li> <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li> <li><a href="#" class="nav-link px-2 text-white">About</a></li> </ul> <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search"> <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search"> </form> <div class="text-end"> <button type="button" class="btn btn-outline-light me-2">Login</button> <button type="button" class="btn btn-warning">Sign-up</button> </div> </div> </div> </header>
-
-
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script src="../../assets/js/vendor/popper.min.js"></script>
-<script src="../../dist/js/bootstrap.min.js"></script>
-
-
-</body>
-<div class="container">
-<div class="container-fluid p-5 bg-primary text-white text-center">
-    <h1>Tim Vyhnálek</h1>
-    <p>Toto je můj web</p>
-</div>
-
-
-<body>
-
-
-
-<main role="main">
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <!-- Hlavní navigace -->
+    <header class="p-3 text-bg-dark sticky-top shadow-sm">
         <div class="container">
-            <h1 class="display-3">Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
-        </div>
-    </div>
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none fw-bold fs-4">
+                    <i class="bi bi-person-circle me-2"></i> Tim Vyhnálek
+                </a>
 
-    <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                <ul class="nav me-auto ms-lg-4 mb-2 justify-content-center mb-md-0">
+                    <li><a href="#uvol" class="nav-link px-2 text-white">Domů</a></li>
+                    <li><a href="#o-mne" class="nav-link px-2 text-white-50">O mně</a></li>
+                    <li><a href="#uspechy" class="nav-link px-2 text-white-50">Mé úspěchy</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Hledat..." aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Přihlásit</button>
+                    <button type="button" class="btn btn-warning">Registrace</button>
+                </div>
             </div>
         </div>
+    </header>
 
-        <hr>
-
-    </div> <!-- /container -->
-
-</main>
-
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script src="../../assets/js/vendor/popper.min.js"></script>
-<script src="../../dist/js/bootstrap.min.js"></script>
-
-
-</body>
-    <div class="card mx-auto" style="width:400px" >
-        <img class="card-img-center" src="selfie.jpg" alt="Card image" style="width:100%">
-        <div class="card-body">
-            <h4 class="card-title">Tim Vyhnálek</h4>
-            <p class="card-text">Buuuuuum</p>
-            <a href="#" class="btn btn-primary">Koukni se na muj profil</a>
+    <main id="uvol">
+        <!-- Hero Banner -->
+        <div class="bg-primary text-white text-center py-5 mb-5 shadow-sm">
+            <div class="container py-4">
+                <h1 class="display-4 fw-bold">Vítejte na mém webu!</h1>
+                <p class="lead">lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a class="btn btn-light btn-lg mt-3 fw-semibold text-primary" href="#uspechy" role="button">Moje úspěchy »</a>
+            </div>
         </div>
-    </div>
-    <div class="container px-4 py-5" id="featured-3"> <h2 class="pb-2 border-bottom">Columns with icons</h2> <div class="row g-4 py-5 row-cols-1 row-cols-lg-3"> <div class="feature col"> <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"> <svg class="bi" width="1em" height="1em" aria-hidden="true"><use xlink:href="#collection"></use></svg> </div> <h3 class="fs-2 text-body-emphasis">Featured title</h3> <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> <a href="#" class="icon-link">
-        Call to action
-        <svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg> </a> </div> <div class="feature col"> <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"> <svg class="bi" width="1em" height="1em" aria-hidden="true"><use xlink:href="#people-circle"></use></svg> </div> <h3 class="fs-2 text-body-emphasis">Featured title</h3> <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> <a href="#" class="icon-link">
-        Call to action
-        <svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg> </a> </div> <div class="feature col"> <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"> <svg class="bi" width="1em" height="1em" aria-hidden="true"><use xlink:href="#toggles2"></use></svg> </div> <h3 class="fs-2 text-body-emphasis">Featured title</h3> <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p> <a href="#" class="icon-link">
-        Call to action
-        <svg class="bi" aria-hidden="true"><use xlink:href="#chevron-right"></use></svg> </a> </div> </div> </div>
 
-<center><h1>Mé úspěchy</h1></center>
-<div class="container p-5 my-5 border">
-    <h1>Atletické závody</h1>
-    <p>Pokořil jsem rekord školy i celého turnaje ve skoku do dálky.</p>
-</div>
+        <div class="container my-5">
+            <div class="row g-5 align-items-center" id="o-mne">
+                <!-- Profilová Karta -->
+                <div class="col-lg-4 col-md-5">
+                    <div class="card shadow border-0 rounded-4 overflow-hidden">
+                        <img src="selfie.jpg" class="card-img-top" alt="Tim Vyhnálek" style="height: 320px; object-fit: cover;">
+                        <div class="card-body text-center p-4">
+                            <h4 class="card-title fw-bold">Tim Vyhnálek</h4>
+                            <p class="card-text text-muted">Buuuuuum 🚀</p>
+                            <a href="#" class="btn btn-primary w-100 rounded-pill">Koukni se na můj profil</a>
+                        </div>
+                    </div>
+                </div>
 
-<div class="container p-5 my-5 bg-dark text-white">
-    <h1>Florbalový turnaj</h1>
-    <p>Díky mé skvělé obraně i útoku jsme se dokázali umístit čtvrtí z 12 týmů.</p>
-</div>
+                <!-- Úvodní popis -->
+                <div class="col-lg-8 col-md-7">
+                    <h2 class="display-6 fw-bold mb-3">Něco o mně</h2>
+                    <p class="fs-5 text-secondary">
+                        Vítám vás na svých osobních stránkách. Rád se věnuji sportu a posouvám své hranice. Podívejte se na mé největší dosavadní úspěchy níže!
+                    </p>
+                    <hr class="my-4">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="p-3 bg-white rounded shadow-sm border text-center">
+                                <i class="bi bi-trophy text-warning fs-1"></i>
+                                <h5 class="mt-2 fw-bold">Sport</h5>
+                                <p class="small text-muted mb-0">Atletika a florbal</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 bg-white rounded shadow-sm border text-center">
+                                <i class="bi bi-laptop text-primary fs-1"></i>
+                                <h5 class="mt-2 fw-bold">Technologie</h5>
+                                <p class="small text-muted mb-0">Pomoc s PC & IT</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3 bg-white rounded shadow-sm border text-center">
+                                <i class="bi bi-people text-success fs-1"></i>
+                                <h5 class="mt-2 fw-bold">Tým</h5>
+                                <p class="small text-muted mb-0">Týmový hráč</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<div class="container p-5 my-5 bg-primary text-white">
-    <h1>Pomáhám kamarádům s počítačema.</h1>
-    <p>Když jim něco nejde tak jim s tim pomaham ja</p>
-    </div>
-</div>
+        
+        <div class="container py-5" id="uspechy">
+            <h2 class="text-center display-5 fw-bold mb-5">Mé úspěchy</h2>
+            
+            <div class="row g-4">
+               
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 bg-white">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-3 fs-2 mb-3" style="width: 60px; height: 60px;">
+                            <i class="bi bi-award"></i>
+                        </div>
+                        <h3 class="h4 fw-bold">Atletické závody</h3>
+                        <p class="text-secondary">Pokořil jsem rekord školy i celého turnaje ve skoku do dálky.</p>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 text-white bg-dark">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-warning text-dark rounded-3 fs-2 mb-3" style="width: 60px; height: 60px;">
+                            <i class="bi bi-dribbble"></i>
+                        </div>
+                        <h3 class="h4 fw-bold">Florbalový turnaj</h3>
+                        <p class="text-white-50">Díky mé skvělé obraně i útoku jsme se dokázali umístit čtvrtí z 12 týmů.</p>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 text-white bg-primary">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-light text-primary rounded-3 fs-2 mb-3" style="width: 60px; height: 60px;">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h3 class="h4 fw-bold">IT Podpora</h3>
+                        <p class="text-white-50">lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Patka -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0 text-white-50">&copy; 2026 Tim Vyhnálek. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
